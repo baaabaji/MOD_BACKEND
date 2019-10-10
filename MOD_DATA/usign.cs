@@ -28,5 +28,8 @@ namespace MOD_DATA
         public string pictureUrl { get; set; }
         public bool active { get; set; }
         public int role { get; set; }
+        public string regCode { get; set; }
+        public string TrainerTimings { get; set; }
+        public string TrainerTechnology { get; set; }
     }
 }

@@ -4,11 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="812cca759c944045ab2ad0e6a84754e0" Name="Diagram1">
+      <Diagram DiagramId="1f39511637bf4e21808faedd9e789c5a" Name="Diagram1">
         <EntityTypeShape EntityType="MOD_DBModel.PaymentDtl" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MOD_DBModel.SkillDtl" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MOD_DBModel.TrainingDtl" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="MOD_DBModel.usign" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOD_DBModel.SkillDtl" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOD_DBModel.TrainingDtl" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MOD_DBModel.usign" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
         <AssociationConnector Association="MOD_DBModel.FK_TrainingDtls_SkillDtls" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

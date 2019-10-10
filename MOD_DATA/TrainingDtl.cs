@@ -31,7 +31,10 @@ namespace MOD_DATA
         public string mentorName { get; set; }
         public int skillId { get; set; }
         public string skillname { get; set; }
-        public Nullable<double> fees { get; set; }
+        public string timeslot { get; set; }
+        public Nullable<bool> accept { get; set; }
+        public Nullable<bool> rejected { get; set; }
+        public Nullable<bool> PaymentStatus { get; set; }
     
         public virtual SkillDtl SkillDtl { get; set; }
     }
