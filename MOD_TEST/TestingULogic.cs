@@ -16,12 +16,65 @@ namespace MOD_TEST
         [Test]
         public void getAllUser()
         {
-            ULogic uLogic = new ULogic();
-            IList<usign> user = uLogic.GetAllUsers();
+            ULogic ULogic = new ULogic();
+            IList<usign> user = ULogic.GetAllUsers();
             Assert.IsNotNull(user);
 
 
             //mjbjafjadfjdfdjfadjfadjkffdjajkfafafdjkfdadkfkadfkadfkadjfkadfkajka
         }
+        
+
+        [Test]
+        public void Register()
+        {
+            ULogic ULogic = new ULogic();
+            usign user = new usign()
+            {
+                firstName = "sakshi",
+                lastName = "raina",
+                userName = "sakshiraina",
+                Password = "12345678",
+                Email = "sakshiraina@gmail.com",
+                Phone = 9149850424,
+                LinkedinURL = "www.linkkdin.com",
+                YOE = 10,
+                TrainerTechnology = "Jaava",
+                active = true,
+                role = 3,
+            };
+            ULogic.Register(user);
+            usign user1 = ULogic.GetUserById(1021);
+            Assert.IsNotNull(user1);
+        }
+
+        [Test]
+        public void GetAllUser()
+        {
+            ULogic ULogic = new ULogic();
+            IList<usign> p = ULogic.GetAllUsers();
+            Assert.IsNotNull(p);
+        }
+
+        
+
+        
+
+
+        [Test]
+        public void getskillbyid()
+        {
+            ULogic ULogic = new ULogic();
+            IList<SkillDtl> p = ULogic.GetSkillById(2);
+            Assert.IsNotNull(p);
+        }
+        [Test]
+        public void addTrainingDtls()
+        {
+            ULogic ULogic = new ULogic();
+            IList<TrainingDtl> p = ULogic.GetApproval();
+            Assert.IsNotNull(p);
+        }
+
     }
 }
